@@ -1,3 +1,6 @@
 [submodule "candle_dll"]
 	path = candle_dll
 	url = git@github.com:Andrei-Errapart/candle_dll.git
+[submodule "fox"]
+	path = fox
+	url = git@github.com:Andrei-Errapart/fox.git

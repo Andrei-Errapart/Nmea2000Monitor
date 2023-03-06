@@ -2,6 +2,7 @@
 
 #include <math.h>
 
+
 // static void constexpr*  invalid_handle_value = (void*)(-1LL);
 template <typename T>
 static T invalid_value()
@@ -9,7 +10,7 @@ static T invalid_value()
 	return (T)(static_cast<intptr_t>(-1));
 }
 
-static constexpr FXTime READ_TIMER_INTERVAL_NS = 10 * 1000 * 1000;
+static constexpr FXTime READ_TIMER_INTERVAL_NS = 100 * 1000 * 1000;
 static constexpr FXTime ONE_SECOND_NS = 1000 * 1000 * 1000;
 
 // Message Map for the Scribble Window class
@@ -86,7 +87,7 @@ long MainWindow::onTimerRead(FXObject*, FXSelector, void*)
 			while (candle_frame_read(m_candle_handle, &frame, 0)) {
 				++this_round_count;
 			}
-			const candle_err_t err = candle_dev_last_error(&m_candle_handle);
+			const candle_err_t err = candle_dev_last_error(m_candle_handle);
 			if (err != CANDLE_ERR_READ_TIMEOUT && err != CANDLE_ERR_OK) {
 				m_device_label->setText(candle_error_text(err));
 			}

@@ -1,8 +1,9 @@
 # Nmea2000Monitor
-NMEA 2000 monitor built on top of Candle API
+NMEA 2000 monitor built on top of Candle API.
+The results are sent over to the server.
 
 # Usage
-* Select interface and speed and off you go.
+* Just start the program. It will start automatically.
 
 # Building
 

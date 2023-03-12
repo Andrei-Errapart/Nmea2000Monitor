@@ -12,7 +12,7 @@
 MonitorSettings MonitorSettings::default_value()
 {
 	MonitorSettings r;
-	r.Port = 2000u;
+	r.Port = 9009u;
 	return r;
 }
 

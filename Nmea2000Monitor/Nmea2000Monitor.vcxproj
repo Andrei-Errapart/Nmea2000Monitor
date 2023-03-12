@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="MonitorService.cpp" />
     <ClCompile Include="MonitorSettings.cpp" />
     <ClCompile Include="NMea2000Monitor_main.cpp" />
   </ItemGroup>
@@ -33,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="MonitorService.h" />
     <ClInclude Include="MonitorSettings.h" />
   </ItemGroup>
   <ItemGroup>

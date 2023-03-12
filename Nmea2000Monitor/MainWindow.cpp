@@ -25,6 +25,9 @@ MainWindow::MainWindow()
 long MainWindow::onCmdCloseMe(FXObject* sender, FXSelector, void* ptr)
 {
 	handyman::json::to_file(m_settings, m_settings_path);
+	if (m_service) {
+		m_service->stop();
+	}
 	getApp()->handle(sender, FXSEL(SEL_COMMAND, FXApp::ID_QUIT), ptr);
 	return 1;
 }
@@ -64,6 +67,13 @@ void MainWindow::create()
 
 	// Make the main window appear
 	show(PLACEMENT_SCREEN);
+
+	try {
+		m_service = std::make_unique<MonitorService>(m_settings);
+	}
+	catch (const std::exception& ex) {
+		FXMessageBox::error(getApp(), MBOX_OK, "Error", ex.what());
+	}
 }
 
 MainWindow::~MainWindow()

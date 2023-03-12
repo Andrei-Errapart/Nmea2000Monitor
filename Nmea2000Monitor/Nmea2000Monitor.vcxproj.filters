@@ -3,9 +3,11 @@
   <ItemGroup>
     <ClCompile Include="NMea2000Monitor_main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="MonitorSettings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="MonitorSettings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />

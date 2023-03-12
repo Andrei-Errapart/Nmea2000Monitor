@@ -159,10 +159,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="handyman.cpp" />
+    <ClInclude Include="handyman\os.h" />
+    <ClInclude Include="handyman\json.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="handyman.h" />
+    <ClCompile Include="handyman\os.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

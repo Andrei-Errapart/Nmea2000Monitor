@@ -4,9 +4,9 @@
 #include "shlobj_core.h"
 
 #include <Windows.h>
-#include "handyman.h"
+#include "os.h"
 
-namespace handyman {
+namespace handyman::os {
 
 std::string appdata_path()
 {
@@ -20,4 +20,4 @@ std::string appdata_path()
 	return r_str;
 }
 
-}
+} // namespace handyman::os

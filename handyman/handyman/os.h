@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace handyman {
+namespace handyman::os {
 
 /// <summary>
 /// Get path to {User}/AppData/Roaming.
@@ -10,4 +10,6 @@ namespace handyman {
 /// <returns></returns>
 std::string appdata_path();
 
-} // namespace handyman
+
+
+} // namespace handyman::os

@@ -1,9 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="handyman.cpp" />
+    <ClInclude Include="handyman\json.h">
+      <Filter>handyman</Filter>
+    </ClInclude>
+    <ClInclude Include="handyman\os.h">
+      <Filter>handyman</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="handyman.h" />
+    <Filter Include="handyman">
+      <UniqueIdentifier>{6a03c473-e91f-42db-af6f-7469fbb82661}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="handyman\os.cpp">
+      <Filter>handyman</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
